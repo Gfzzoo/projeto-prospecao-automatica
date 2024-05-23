@@ -18,16 +18,16 @@ df_final = pd.DataFrame()
 print('Iniciando raspagem de dados...')
 
 # Loop que faz a paginação
-for i in range(1, 2):
+for i in range(1, 50):
     data = {
     "query": {
         "termo": [],
         "atividade_principal": [],
         "natureza_juridica": [],
         "uf": [
-            "SP"
+            "SC"
         ],
-        "municipio": [],
+        "municipio": [Florianopolis],
         "bairro": [],
         "situacao_cadastral": "ATIVA",
         "cep": [],
